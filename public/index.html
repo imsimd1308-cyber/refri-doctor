@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>냉털박사</title>
+    <meta name="description" content="냉장고 속 재료로 오늘 만들 수 있는 음식을 추천해주는 모바일 앱" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <div>
+          <p class="eyebrow">냉장고 속 재료로 오늘 한 끼</p>
+          <h1 id="app-title">냉털박사</h1>
+        </div>
+        <div class="quick-meter" aria-label="입력된 재료 수">
+          <span id="ingredientCount">0</span>
+          <small>/ 5</small>
+        </div>
+      </section>
+
+      <section class="panel input-panel" aria-labelledby="ingredient-title">
+        <div class="section-heading">
+          <h2 id="ingredient-title">재료 입력</h2>
+          <button class="ghost-button" id="clearButton" type="button">초기화</button>
+        </div>
+
+        <form class="ingredient-form" id="ingredientForm">
+          <label class="sr-only" for="ingredientInput">식재료</label>
+          <input
+            id="ingredientInput"
+            name="ingredient"
+            type="text"
+            inputmode="text"
+            autocomplete="off"
+            placeholder="예: 계란, 김치, 두부"
+            maxlength="60"
+          />
+          <button class="icon-button" type="submit" aria-label="재료 추가">+</button>
+        </form>
+
+        <div class="chips" id="ingredientChips" aria-live="polite"></div>
+
+        <div class="suggestions" aria-label="빠른 재료 선택">
+          <button type="button" data-ingredient="계란">계란</button>
+          <button type="button" data-ingredient="김치">김치</button>
+          <button type="button" data-ingredient="두부">두부</button>
+          <button type="button" data-ingredient="양파">양파</button>
+          <button type="button" data-ingredient="밥">밥</button>
+          <button type="button" data-ingredient="감자">감자</button>
+          <button type="button" data-ingredient="참치">참치</button>
+          <button type="button" data-ingredient="대파">대파</button>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="style-title">
+        <div class="section-heading">
+          <h2 id="style-title">오늘의 방향</h2>
+        </div>
+        <div class="segmented" id="stylePicker" role="radiogroup" aria-label="요리 스타일">
+          <button class="active" type="button" role="radio" aria-checked="true" data-style="간단식">간단식</button>
+          <button type="button" role="radio" aria-checked="false" data-style="건강식">건강식</button>
+          <button type="button" role="radio" aria-checked="false" data-style="아이반찬">아이반찬</button>
+          <button type="button" role="radio" aria-checked="false" data-style="술안주">술안주</button>
+        </div>
+      </section>
+
+      <button class="primary-button" id="recommendButton" type="button">
+        추천받기
+      </button>
+
+      <section class="results" id="results" aria-live="polite"></section>
+    </main>
+
+    <template id="recipeTemplate">
+      <article class="recipe-card">
+        <div class="recipe-topline">
+          <span class="badge"></span>
+          <span class="time"></span>
+        </div>
+        <h3></h3>
+        <p class="recipe-reason"></p>
+        <button class="recipe-button" type="button">레시피 보기</button>
+      </article>
+    </template>
+
+    <script src="./app.js?v=4"></script>
+  </body>
+</html>
