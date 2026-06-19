@@ -1,11 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">냉털박사 아이콘</title>
+  <desc id="desc">웃는 냉장고와 채소를 담은 모바일 앱 아이콘</desc>
   <rect width="512" height="512" rx="112" fill="#fff4e5"/>
-  <rect x="132" y="88" width="248" height="336" rx="34" fill="#263a31"/>
-  <rect x="156" y="126" width="200" height="108" rx="18" fill="#d8efe2"/>
-  <rect x="156" y="258" width="200" height="132" rx="18" fill="#ffffff"/>
-  <path d="M206 166c21-24 65-24 86 0 18 21 9 53-27 58-14 2-27 2-41 0-36-5-45-37-18-58z" fill="#d9553f"/>
-  <path d="M256 155c6-26 27-39 58-39" fill="none" stroke="#246d4d" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="214" cy="318" r="22" fill="#f4c04f"/>
-  <circle cx="286" cy="318" r="22" fill="#d9553f"/>
-  <path d="M206 365h100" stroke="#263a31" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="394" cy="112" r="34" fill="#ffd36a"/>
+  <path d="M393 61v24M393 139v24M342 112h24M420 112h24" stroke="#d9553f" stroke-width="14" stroke-linecap="round"/>
+  <rect x="122" y="82" width="268" height="350" rx="44" fill="#263a31"/>
+  <rect x="150" y="116" width="212" height="128" rx="24" fill="#d8efe2"/>
+  <rect x="150" y="266" width="212" height="132" rx="24" fill="#ffffff"/>
+  <path d="M122 250h268" stroke="#fff4e5" stroke-width="18" stroke-linecap="round" opacity=".9"/>
+  <rect x="336" y="156" width="16" height="54" rx="8" fill="#263a31"/>
+  <rect x="336" y="306" width="16" height="54" rx="8" fill="#263a31"/>
+  <circle cx="210" cy="172" r="14" fill="#263a31"/>
+  <circle cx="282" cy="172" r="14" fill="#263a31"/>
+  <path d="M220 205c18 18 54 18 72 0" fill="none" stroke="#263a31" stroke-width="14" stroke-linecap="round"/>
+  <path d="M197 331c0-32 25-58 57-58s57 26 57 58" fill="#f07b5f"/>
+  <path d="M255 270c8-30 32-48 68-48" fill="none" stroke="#2f7d4d" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="200" cy="346" r="22" fill="#f4c04f"/>
+  <circle cx="256" cy="346" r="24" fill="#d9553f"/>
+  <circle cx="312" cy="346" r="22" fill="#62b77a"/>
+  <path d="M188 383h136" stroke="#263a31" stroke-width="16" stroke-linecap="round"/>
 </svg>

@@ -248,3 +248,11 @@ recommendButton.addEventListener("click", renderRecommendations);
 
 renderIngredients();
 
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch(() => {
+      // PWA support is optional; the app still works without a service worker.
+    });
+  });
+}
+
